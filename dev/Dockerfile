@@ -12,4 +12,4 @@ RUN apt-get update && apt-get upgrade -y \
     && apt-get autoclean \
     && apt-get autoremove
 
-CMD ["bash"]
+CMD ["sleep", "infinity"]
