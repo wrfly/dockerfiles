@@ -1,6 +1,7 @@
 FROM ubuntu
 LABEL maintainer="wrfly <mr.wrfly@gmail.com>"
-RUN apt-get update && apt-get upgrade -y \
+RUN export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update && apt-get upgrade -y \
     && apt-get install -y iptables vim xxd iftop \
     tcpdump dnsutils iputils-* nmap netcat atop \
     silversearcher-ag mtr iotop ngrep iptraf bc \
